@@ -1,0 +1,6 @@
+---
+# handlers file for molecule_example
+- name: Restart apache
+  ansible.builtin.service:
+    name: "{{ apache_service }}"
+    state: restarted

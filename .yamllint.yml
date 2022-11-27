@@ -6,4 +6,6 @@ rules:
   comments: disable
 
 ignore: |
+  .tox/
+  .cache/
   .github/workflows

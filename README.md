@@ -1,9 +1,31 @@
-Role Name
-=========
+# molecule_example
 
-This is a basic example role to test molecule functionality
+An example [Ansible](https://www.ansible.com) role for testing Molecule.
 
-License
--------
+## Requirements
 
-BSD
+None.
+
+## Role Variables
+
+None.
+
+## Dependencies
+
+None.
+## Example Playbook
+
+```yaml
+---
+- name: Linux Admin Packages
+  hosts: all
+  roles:
+    - role: "dgibbs64.molecule_example"
+```
+## License
+
+MIT
+
+## Author Information
+
+- [Daniel Gibbs](https://danielgibbs.co.uk)

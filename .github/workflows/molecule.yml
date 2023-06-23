@@ -3,6 +3,8 @@ name: Ansible Molecule
 on:
   workflow_dispatch:
   push:
+    branches-ignore:
+      - repo-sync
   pull_request:
   schedule:
     - cron: "16 0 * * 0"
@@ -44,6 +46,7 @@ jobs:
           - centos7
           - debian10
           - debian11
+          - debian12
           - debian9
           - fedora36
           - fedora37

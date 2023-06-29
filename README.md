@@ -2,6 +2,10 @@
 
 An example [Ansible](https://www.ansible.com) role for testing Molecule.
 
+## About
+
+This role is an example of how to use Molecule to test an Ansible role.
+
 ## Requirements
 
 None.
@@ -13,6 +17,7 @@ None.
 ## Dependencies
 
 None.
+
 ## Example Playbook
 
 ```yaml
@@ -22,6 +27,7 @@ None.
   roles:
     - role: "dgibbs64.molecule_example"
 ```
+
 ## License
 
 MIT

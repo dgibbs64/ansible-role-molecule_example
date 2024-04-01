@@ -26,7 +26,7 @@
       <head><title>Hello world!</title></head>
       <body>Hello world!</body>
       </html>
-    dest: "/var/www/html/index.html"
+    dest: "{{ index_file }}"
     mode: "0644"
   notify: Restart apache
 

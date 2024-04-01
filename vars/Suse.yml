@@ -1,3 +1,4 @@
 ---
 apache_service: apache2
 apache_package: apache2
+index_file: /srv/www/index.html

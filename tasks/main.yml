@@ -30,6 +30,14 @@
     mode: "0644"
   notify: Restart apache
 
+- name: "Change ownership of /srv/www (Suse)"
+  ansible.builtin.file:
+    path: /srv/www
+    owner: wwwrun
+    group: wwwrun
+    recurse: true
+  when: ansible_os_family == "Suse"
+
 - name: "Ensure Apache is running and starts at boot"
   ansible.builtin.service:
     name: "{{ apache_service }}"

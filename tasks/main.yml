@@ -18,6 +18,13 @@
   ansible.builtin.package:
     name: "{{ apache_package }}"
     state: present
+  when: ansible_os_family != "Suse"
+
+- name: "Ensure Apache is installed"
+  ansible.builtin.zypper:
+    name: "{{ apache_package }}"
+    state: present
+  when: ansible_os_family == "Suse"
 
 - name: "Copy a web page"
   ansible.builtin.copy:

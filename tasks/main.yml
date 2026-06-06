@@ -32,7 +32,7 @@
 
 - name: "Change ownership of /srv/www (Suse)"
   ansible.builtin.file:
-    path: /srv/www
+    path: /srv/www/htdocs
     owner: wwwrun
     group: wwwrun
     recurse: true
